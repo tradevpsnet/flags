@@ -42,12 +42,10 @@ async function processDirectory(dir: string, relativePath = ''): Promise<IIconEx
           },
           expandProps: 'end',
           template: ({ componentName, jsx }, { tpl }) => {
-            // Extract original dimensions
             const widthMatch = svgCode.match(/width="([^"]+)"/);
             const heightMatch = svgCode.match(/height="([^"]+)"/);
             const viewBoxMatch = svgCode.match(/viewBox="([^"]+)"/);
             
-            // Calculate default viewBox
             let defaultViewBox = '"0 0 40 30"'; // Fallback
             if (viewBoxMatch) {
               defaultViewBox = `"${viewBoxMatch[1]}"`;
