@@ -16,7 +16,6 @@ npm i @tradevpsnet/flags
 To use this library in a Next.js app, add the following to your `next.config.js`:
 
 ```js
-module.exports = {
   webpack(config) {
     config.module.rules.push({
       test: /\.svg$/,
@@ -24,7 +23,6 @@ module.exports = {
     });
     return config;
   },
-};
 ```
 
 Also install the following package:
