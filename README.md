@@ -1,6 +1,3 @@
-# flags
-The set of flags from TradeVPS
-
 ## 🌐 Flag Icons
 Each flag is a self-contained React component and can be resized using standard `width` and `height` props.
 We use optimized SVGs with optional `viewBox` support, so they scale and behave consistently.
@@ -8,7 +5,7 @@ We use optimized SVGs with optional `viewBox` support, so they scale and behave 
 You can import flags using either **PascalCase** names (e.g., `UnitedKingdom`, `France`, `Germany`) or **ISO 3166-1 alpha-2 codes** (e.g., `Gb`, `Fr`, `De`) depending on your preference or automation tooling.
 
 
-### 🛠️ Setup (Next.js projects)
+### 🛠️ Setup
 
 
 install
@@ -47,7 +44,7 @@ npm install --save-dev @svgr/webpack
 
 ---
 
-### 🌐 Flags
+### Usage
 
 You can import flags by either ISO code or PascalCase name.
 
