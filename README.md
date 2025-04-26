@@ -8,7 +8,7 @@ You can import flags using either **PascalCase** names (e.g., `UnitedKingdom`, `
 ### 🛠️ Setup
 
 
-install
+#### install
 ```bash
 npm i @tradevpsnet/flags
 ```
@@ -66,14 +66,13 @@ You can import flags by either ISO code or PascalCase name.
 Example usage:
 
 ```jsx
-import { Gb, France, Cn, Germany  } from 'flags';
+import { Gb, France, Cn, Germany  } from '@tradevpsnet/flags';
 
 export default function Example() {
   return (
     <France />
     <Gb width={48} height={36} />
     
-    <Fr />
     <Gb width={50} height={40} />
     <Germany style={{ height: '1.5em' }} />
 
