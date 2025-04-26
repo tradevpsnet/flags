@@ -2,6 +2,10 @@
   "name": "@tradevpsnet/flags",
   "version": "1.0.0",
   "description": "The set of flags from TradeVPS",
+  "publishConfig": {
+  "access": "public"
+},
+"sideEffects": false,
   "engines": {
     "node": ">=16.0.0"
   },
