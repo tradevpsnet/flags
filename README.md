@@ -2,7 +2,7 @@
 Each flag is a self-contained React component and can be resized using standard `width` and `height` props.
 We use optimized SVGs with optional `viewBox` support, so they scale and behave consistently.
 
-You can import flags using either **PascalCase** names (e.g., `UnitedKingdom`, `France`, `Germany`) or **ISO 3166-1 alpha-2 codes(https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2)** (e.g., `Gb`, `Fr`, `De`) depending on your preference or automation tooling.
+You can import flags using either **PascalCase** names (e.g., `UnitedKingdom`, `France`, `Germany`) or **[ISO 3166-1 alpha-2 codes](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2)** (e.g., `Gb`, `Fr`, `De`) depending on your preference or automation tooling.
 
 
 ### 🛠️ Setup
