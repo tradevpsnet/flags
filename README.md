@@ -16,6 +16,8 @@ npm i @tradevpsnet/flags
 To use this library in a Next.js app, add the following to your `next.config.js`:
 
 ```js
+
+  transpilePackages: ['@tradevpsnet/flags'], // Explicitly transpile this package
   webpack(config) {
     config.module.rules.push({
       test: /\.svg$/,

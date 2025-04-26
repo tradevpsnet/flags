@@ -1,5 +1,5 @@
 {
-  "name": "flags",
+  "name": "@tradevpsnet/flags",
   "version": "1.0.0",
   "description": "The set of flags from TradeVPS",
   "engines": {
