@@ -24,8 +24,8 @@ export default function Home() {
   );
 }
 ````
-### Alternative Usage (Public API)
-Or if you prefer, you can use our hosted API to directly fetch SVGs without installing anything [using our public api](https://flags.apis.tradevps.net)
+### Public CDN
+Or if you prefer, you can use our hosted API to directly fetch SVGs without installing anything [https://flags.apis.tradevps.net](https://flags.apis.tradevps.net)
 
 #### Example
 ````js
