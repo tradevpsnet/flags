@@ -13,3 +13,6 @@ build-icons.ts
 .vscode/
 *.tsx
 *.map
+.worker.ts
+.r2
+.wrangler

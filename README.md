@@ -24,6 +24,14 @@ export default function Home() {
   );
 }
 ````
+### Alternative Usage (Public API)
+Or if you prefer, you can use our hosted API to directly fetch SVGs without installing anything [using our public api](https://flags.apis.tradevps.net)
+
+#### Example
+````js
+<img src="https://flags.apis.tradevps.net/de.svg" alt="Germany Flag" width="100" />
+````
+
 
 #### Next.js Config
 To use this library in a Next.js app, add the following to your `next.config.js`:
