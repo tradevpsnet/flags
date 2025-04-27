@@ -23,7 +23,7 @@ export default {
     if (!filename.endsWith('.svg')) {
       return new Response('Not Found', { status: 404 });
     }
-    
+
     try {
 
       const object = await env.COUNTRIES_BUCKET.get(filename);
@@ -33,13 +33,19 @@ export default {
       return new Response(object.body, {
         headers: {
           'Content-Type': 'image/svg+xml',
-          'Cache-Control': 'public, max-age=31536000, immutable',
+          'Cache-Control': 'public, max-age=86400, immutable',
           'Access-Control-Allow-Origin': '*'
         }
       });
     } catch (err) {
       console.error('Error fetching object:', err);
-      return new Response('Internal Server Error', { status: 500 });
+      return new Response('Internal Server Error', {
+        status: 500,
+        headers: {
+          'Access-Control-Allow-Origin': '*',
+          'Content-Type': 'text/plain'
+        }
+      });
     }
   }
 };
