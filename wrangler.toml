@@ -1,0 +1,7 @@
+name = "flags-worker"
+compatibility_date = "2024-04-27"
+main = "worker.ts"
+[[r2_buckets]]
+binding = "COUNTRIES_BUCKET"    # matches env.COUNTRIES_BUCKET in your code
+bucket_name = "countries" # name you choose for your R2 (local or Cloudflare real bucket)
+preview_bucket_name = "countries" # used when previewing (like with miniflare)
