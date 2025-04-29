@@ -2,6 +2,7 @@ import fs from 'fs/promises';
 import path from 'path';
 import { transform } from '@svgr/core';
 import { countryCodeToName } from './country-map'
+import { buildSVGCopy } from './copy-svg';
 
 const ICONS_DIR = path.join(process.cwd(), 'src/icons');
 const OUT_DIR = path.join(process.cwd(), 'dist/icons');
@@ -134,4 +135,10 @@ async function buildIcons() {
   }
 }
 
-buildIcons();
+  const exportSVGs = process.argv.includes('--export');
+
+  if (exportSVGs) {
+    buildSVGCopy();
+  } else{
+    buildIcons();
+  }

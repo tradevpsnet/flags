@@ -11,7 +11,7 @@
   },
   "scripts": {
     "dev": "wrangler dev",
-    "build": "tsx build-icons.ts dist/",
+    "build": "tsx build-icons.ts",
     "prepublishOnly": "npm run build",
     "lint": "eslint src --ext .ts,.tsx",
     "format": "prettier --write \"src/**/*.{ts,tsx}\"",
